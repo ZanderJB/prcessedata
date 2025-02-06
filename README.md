@@ -8,30 +8,30 @@ Answer the following prediction questions:
 1. Look at `resources/stolen_bikes.csv`.
 
     - How many fields are present? 
-        > Your answer
+        > 14
 
     - How many records are present?
-        > Your answer
+        > 8987
 
     - What types of data are the fields (strings, ints, etc.)?
-        > Your answer
+        > strings and ints
 
 
 2. Look at the `get_records()` function. 
 
     - How many and what type of arguments does it take?
-        > Your answer
+        > 1, str
 
     - What does the function return?
-        > Your answer
+        > str, str, int
 
 3. What would the program print out when run?
-    > Your answer
+    > lenght of the records, the first record, and the first recode "district"
 
 ## Run
 Run the program. 
 1. Does the program's output match what you expected? If not, what were the differences?
-    > Your answer
+    > 
 
 ## Investigate
 View the instructor's [presentation](https://docs.google.com/presentation/d/186dvW8FcyGPVWGNRolW7RLBhoDX1yBZCGrQT-tGRUuM/edit#slide=id.g32e76c66631_0_7) about CSV files and lists and dictionaries.

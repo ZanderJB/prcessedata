@@ -27,14 +27,43 @@ def get_records(data_filename: str) -> list[dict[str, Union[str, int]]]:
 
   return records
 
+def convert_fields(records: list[dict[str, Union[str,int]]]) -> None:
+  for record in records:
+    record("REPORTYEAR") = int(record("REPORTYEAR"))
+
+def calcuate_avg(records k:str) -> float
+  total: int = 0
+  for record in records:
+    total += record[k]
+
+    return total/len(records)
+
+def summarize_by_month(records: list(record)) -> dict(str, int):
+  summary: dict[str, int] = () #setup empty dictionary
+  if month in summary:
+    summary[month] += 1
+  else:
+    summary[month] = 1
+
+  for r in records:
+    month: str = r["REPORTDATE"][5:7] #grab month
+
+
 def main() -> None:
   data_filename: str = "resources/stolen_bikes.csv"
   records: list[dict[str, Union[str, int]]] = get_records(data_filename)
+  convert_fields(records)
 
+  summary: dict(str, int) = summarize_by_month(records)
+
+  for month in sumamry.keys():
+    print(f"{month}:{summary[month]}")
+
+  """
   print(f"{len(records)} records read in.")
   print(records[0])
   print(records[0]["District"])
-
+  """
 
 if __name__ == "__main__":
   main()
